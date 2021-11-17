@@ -1,0 +1,97 @@
+
+//Selecione o database
+use('Doalize')
+
+// Remove a collection
+db.estudantes.drop() 
+
+//Cria a collection com a validação do schema
+use('Doalize')
+
+db.createCollection('campanhas', {
+    validator: {
+       $jsonSchema: {
+          bsonType: 'object',
+          required: [ 'titulo', 'categoria', 'dataInicio', 'dataTermino', 'endereco', 'voluntarios' ],
+          properties: {
+             titulo: {
+                bsonType: 'string',
+                description: 'Titulo da Campanha é obrigatório'
+             },
+             dataInicio: {
+                bsonType: 'date',
+                description: 'Insira a data de início da campanha'
+             },
+             dataTermino: {
+                bsonType: 'date',
+                description: 'Insira a data de termino da campanha'
+             },
+             categoria: {
+                enum: ['Alimentos', 'Brinquedos', 'Livros', 'Escolar', 'Roupas', 'Eletrônicos', 'Limpeza', 'Higiene',  'Dinheiro', 'Outro'],
+                description: 'A categoria deve ser: Alimentos, Brinquedos, Livros, Escolar, Roupas, Eletrônicos, Limpeza, Higiene, Dinheiro, Outro'
+             },
+              observacoes: {
+                 bsonType: 'string',
+                 description: 'observações da categoria da campanha'
+             }, 
+             endereco: {
+                bsonType: 'string',
+                description: 'O endereço deve ser informado!'
+             },
+             sobre: {
+                 bsonType: 'string',
+                 description: 'Breve descrição da campanha'
+             },
+             linkFoto: {
+                 bsonType: 'string',
+                 description: 'link de foto de divulgação da campanha'
+             }, 
+             numero: {
+                 bsonType: 'string',
+                 description: 'número de contato'
+             },
+             voluntarios: {
+                 bsonType: 'string',
+                 description: 'deve ser informado se é aceito cadastro de voluntários (Sim, Não)',
+                 enum: ['Sim', 'Não']
+             },
+             descricaoAtividades: {
+                 bsonType: 'string',
+                 description: 'Breve descrição das atividades do voluntário',
+                 
+             }
+             
+          }
+       }
+    },
+    validationLevel: 'strict', //moderate or off
+    validationAction: 'error' //warn
+ })
+
+//Insere um novo registro
+use('Doalize')
+db.campanhas.insertOne({
+   'titulo':'Natal Feliz',
+   'sobre' : 'Campanha para tornar o natal de crianças carentes mais divertido',
+   'dataInicio': new Date("2021-11-13"), // <YYYY-mm-dd>
+   'dataTermino': new Date("2021-12-22"),
+   'endereco' : 'Rua das flores, 149',
+   'categoria': 'Brinquedos',
+   'observacoes': 'Brinquedos novos ou usados em bom estado',
+   'linkFoto' : 'https://unsplash.com/photos/374abd8l9pU',
+   'numero' : '12345-67889',
+   'voluntarios' : 'Sim',
+   'descricaoAtividades': 'Ajudar a embalar e transportar os presentes no dia 21/12/2021'
+
+})
+
+//Lista todos os registros
+use('Doalize')
+db.campanhas.find()
+
+//Lista um registro pelo titulo
+use('Doalize')
+db.campanhas.find({"titulo": {$eq: 'Natal Feliz'}})
+
+use('Doalize')
+db.campanhas.find({titulo: /natal/i})
