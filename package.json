@@ -10,29 +10,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ricardoleme/mongodbApi.git"
+    "url": "https://github.com/LuizaQFernandes/Backend_Doalize"
   },
   "keywords": [
     "mongodb",
     "NodeJS"
   ],
-  "author": "Prof. Ricardo Leme",
+  "author": "Laura Q Fernandes, Luiza Q. Fernandes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ricardoleme/mongodbApi/issues"
+    "url": "https://github.com/LuizaQFernandes/Backend_Doalize/issues"
   },
-  "homepage": "https://github.com/ricardoleme/mongodbApi#readme",
+  "homepage": "https://github.com/LuizaQFernandes/Backend_Doalize#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
-    "mongodb": "4.1.4"
+    "mongodb": "^4.1.4"
   },
   "devDependencies": {
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.15"
   }
 }

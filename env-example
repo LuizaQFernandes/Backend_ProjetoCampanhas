@@ -1,0 +1,2 @@
+MONGODB_URI=<string de conexão do mongoDB>
+MONGODB_DB=<nome do banco de dados>

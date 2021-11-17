@@ -3,7 +3,7 @@
 use('Doalize')
 
 // Remove a collection
-db.estudantes.drop() 
+db.campanhas.drop() 
 
 //Cria a collection com a validação do schema
 use('Doalize')
