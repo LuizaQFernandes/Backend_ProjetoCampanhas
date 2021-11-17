@@ -19,7 +19,7 @@ Content-Type: application/json
 {
    "titulo":"Ajude",
    "sobre" : "Campanha para arrecadar alimentos para os necessitados",
-   "dataInicio": "2019-04-28T14:45:15",
+   "dataInicio": "2019-04-28T14:45:19",
    "dataTermino": "2019-04-26T14:45:15",
    "endereco" : "Rua Helena, 147",
    "categoria": "Alimentos",
