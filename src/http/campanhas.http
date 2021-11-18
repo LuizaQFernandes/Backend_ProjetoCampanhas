@@ -1,6 +1,8 @@
 //Teste de Requisições REST - campanhas
 @baseURL = http://localhost:4000
 @titulo = Todos contra a fome
+
+
 ###
 // GET - Lista todas as campanhas
 GET {{baseURL}}/campanhas
@@ -18,7 +20,7 @@ Content-Type: application/json
 
 {
    "titulo":"Todos contra a fome",
-   "sobre" : "Campanha para arrecadar alimentos para famílias que precisam",
+   "sobre" : "Campanha para arrecadar alimentos para todos que precisam",
    "dataInicio": "2019-04-28T14:45:19",
    "dataTermino": "2019-04-26T14:45:15",
    "endereco" : "Rua Helena, 147",

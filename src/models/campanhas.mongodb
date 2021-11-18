@@ -1,5 +1,5 @@
 //Selecione o database
-use('DBBackendDoalize')
+use('BackendDoalize')
 
 // Remove a collection
 use('BackendDoalize')
