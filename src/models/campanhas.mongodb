@@ -1,9 +1,9 @@
 //Selecione o database
 use('BackendDoalize')
 
-// Remove a collection
+/* Remove a collection
 use('BackendDoalize')
-db.campanhas.drop() 
+db.campanhas.drop() */
 
 //Cria a collection com a validação do schema
 use('BackendDoalize')
