@@ -1,5 +1,5 @@
 //Teste de Requisições REST - campanhas
-@baseURL = http://localhost:4000
+@baseURL = https://backend-doalize.herokuapp.com
 @titulo = Todos contra a fome
 
 
