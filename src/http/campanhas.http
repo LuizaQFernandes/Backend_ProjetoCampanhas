@@ -1,6 +1,6 @@
 //Teste de Requisições REST - campanhas
 @baseURL = https://backend-doalize.herokuapp.com
-@titulo = Todos contra a fome
+@titulo = Educação de qualidade
 
 
 ###
@@ -19,17 +19,17 @@ POST {{baseURL}}/campanhas
 Content-Type: application/json
 
 {
-   "titulo":"Todos contra a fome",
-   "sobre" : "Campanha para arrecadar alimentos para todos que precisam",
-   "dataInicio": "2019-04-28T14:45:19",
-   "dataTermino": "2019-04-26T14:45:15",
-   "endereco" : "Rua Helena, 147",
-   "categoria": "Alimentos",
-   "observacoes": "Alimentos não pereciveis ou kit de cesta básica",
-   "linkFoto": "https://unsplash.com/photos/Yn0l7uwBrpw ",
-   "numero": "12345-67889",
-   "voluntarios": "Sim",
-   "descricaoAtividades": "Ajudar a embalar e transportar os alimentos"
+   "titulo":"Natal Alegre",
+   "sobre" : "Campanha para tornar o natal de crianças carentes mais divertido",
+   "dataInicio": "2019-04-28T14:45:15", // <YYYY-mm-dd>
+   "dataTermino": "2019-04-28T14:45:15" ,
+   "endereco" : "Rua das flores, 149",
+   "categoria": "Brinquedos",
+   "observacoes": "Brinquedos novos ou usados em bom estado",
+   "linkFoto" : "https://unsplash.com/photos/PxM8aeJbzvk ",
+   "numero" : "12345-67889",
+   "voluntarios" : "Sim",
+   "descricaoAtividades": "Ajudar a embalar e transportar os presentes no dia 21/12/2021"
 }
 
 ### 
@@ -43,15 +43,15 @@ PUT {{baseURL}}/campanhas/
 Content-Type: application/json
 
 {
-   "titulo":"Todos contra a fome",
-   "sobre" : "Campanha para arrecadar alimentos para todos que precisam",
-   "dataInicio": "2019-04-28T14:45:19",
-   "dataTermino": "2019-04-26T14:45:15",
-   "endereco" : "Rua Helena, 147",
-   "categoria": "Alimentos",
-   "observacoes": "Alimentos não pereciveis ou kit de cesta básica",
-   "linkFoto": "https://unsplash.com/photos/Yn0l7uwBrpw ",
-   "numero": "12345-67889",
-   "voluntarios": "Sim",
-   "descricaoAtividades": "Ajudar a embalar e transportar os alimentos"
+   "titulo":"Natal Alegre",
+   "sobre" : "Campanha para tornar o natal de crianças e adolescentes carentes mais divertido",
+   "dataInicio": "2019-04-28T14:45:15", // <YYYY-mm-dd>
+   "dataTermino": "2019-04-28T14:45:15" ,
+   "endereco" : "Rua das flores, 149",
+   "categoria": "Brinquedos",
+   "observacoes": "Brinquedos novos ou usados em bom estado",
+   "linkFoto" : "https://unsplash.com/photos/PxM8aeJbzvk ",
+   "numero" : "12345-67889",
+   "voluntarios" : "Sim",
+   "descricaoAtividades": "Ajudar a embalar e transportar os presentes no dia 21/12/2021"
 }
