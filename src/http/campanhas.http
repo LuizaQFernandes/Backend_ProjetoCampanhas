@@ -1,4 +1,4 @@
-//Teste de Requisições REST - campanhas
+//Teste de Requisições REST -> Campanhas
 @baseURL = https://backend-doalize.herokuapp.com
 @titulo = Educação de qualidade
 
